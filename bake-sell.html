@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Мясо и Хлеб</title>
+  <link rel="preload" href="fonts/RockwellNova.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RockwellNova-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+      <header class="header">
+  <div class="container header__container">
+    <div class="title-hidden">сеть мясных Магазинов</div>
+    <nav class="nav" title="">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="delivery.html" class="nav__link">Доставка</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__logo">
+      <img src="img/logo.png" alt="" class="header__logo-img">
+    </div>
+    <div class="header__right">
+      <div class="header__tel">
+        <a href="tel:88126701555" class="header__tel-link">8 (812) 670-15-55</a>
+
+        <a href="cart.html"><button class="btn-reset header__card">
+            <img class="header__cart-img" src="img/svg/Cart.svg" alt="Корзина">
+          </button></a>
+        <div class="header__count">1</div>
+      </div>
+      <ul class="list-reset header__sotial">
+        <li class="header__item">
+          <a class="header__sotial-link" href="#">
+            <img src="img/svg/insta.svg" alt="Инстаграмм">
+          </a>
+        </li>
+        <li class="header__item">
+        <li class="header__item">
+          <a class="header__sotial-link" href="https://vk.com/login" target="_blank">
+            <img src="img/svg/vk.svg" alt="Вконтакте">
+          </a>
+        </li>
+        </li>
+        <li class="header__item">
+        <li class="header__item">
+          <a class="header__sotial-link" href="#">
+            <img src="img/svg/Email.svg" alt="Емейл">
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+    <main class="main">
+      <div class="modal-adress graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="adress">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content modal-adress__content">
+      <div class="modal-adress__list-box">
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-orange">Ул. ворошилова 3</li>
+          <li class="modal-adress__item modal-adress__item-orange">пр. коммуны 63</li>
+          <li class="modal-adress__item modal-adress__item-orange">Кудрово, ул. Пражская 16</li>
+        </ul>
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-blue">Выборгское шоссе 15</li>
+          <li class="modal-adress__item modal-adress__item-blue">чебный переулок 3а</li>
+          <li class="modal-adress__item modal-adress__item-blue">Типанова 27/39</li>
+          <li class="modal-adress__item modal-adress__item-blue">Суздальский 7</li>
+          <li class="modal-adress__item modal-adress__item-blue">Светлановский 48 к4</li>
+        </ul>
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-green">Выборгское шоссе 15</li>
+          <li class="modal-adress__item modal-adress__item-red">Учебный переулок 3а</li>
+          <li class="modal-adress__item modal-adress__item-red">Типанова 27/39</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="bakestock">
+  <div class="container">
+    <div class="bakestock__title-box">
+      <p class="bakestock__title">Акции мясного клуба</p>
+      <p class="bakestock__decor-text">вкусно и выгодно</p>
+    </div>
+    <div class="bakestock__img-box">
+      <img src="img/bake.jpg" alt="Выпечка" class="bakestock__img">
+      <img src="img/bake_small.png" alt="Выпечка" class="bakestock__img-small">
+    </div>
+    <p class="bakestock__title bakestock__title-bottom">Скидка 50% каждый день</p>
+    <p class="bakestock__descr">Мы рады предложить вам выгодные условия каждый день
+      на всю продукцию выпечки в наших заведениях в половину цены
+      Каждый день с 20:00 до закрытия любую выпечку вы приобретаете
+      с 50%-й скидкой.</p>
+  </div>
+
+</section>
+
+        <section class="stock">
+  <div class="container stock__container">
+    <div class="stock__container-hidden">
+      <div class="stock__title-box">
+        <h2 class="stock__title">Мясные акции</h2>
+        <p class="stock__title-decor">лучшие предложения</p>
+        <p class="stock__decor-hidden">вкусно и выгодно</p>
+      </div>
+      <div class="swiper stock__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide stock__slide">
+            <div class="stock__slide-box">
+              <div class="stock__img-box"></div>
+            </div>
+            <div class="stock__slide-text">
+              <p class="stock__text">Каждый день</p>
+              <p class="stock__text-sub">после 20:00</p>
+              <p class="stock__descr">на всю сладкую выпечку скидка 50%</p>
+              <a href="bake-sell.html" class="stock__link">подробнее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide stock__slide">
+            <div class="stock__slide-box">
+              <div class="stock__img-box"></div>
+            </div>
+            <div class="stock__slide-text">
+              <p class="stock__text">Каждый день</p>
+              <p class="stock__text-sub">после 20:00</p>
+              <p class="stock__descr">на всю сладкую выпечку скидка 50%</p>
+              <a href="bake-sell.html" class="stock__link">подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev stock__prev"></div>
+        <div class="swiper-button-next stock__next"></div>
+      </div>
+      <h3 class="stock__main-title">ДОСТАВКА</h3>
+      <p class="stock__main-descr">доставляем мясо прямо до вашего дома</p>
+      <a href="menu-list.html" class="stock__btn-link">заказать</a>
+
+      <div class="box-hidden">
+        <ul class="list-reset box-hidden__list">
+          <li class="box-hidden__item">
+            <a href="index.html" class="box-hidden__link">
+              <div class="box-hidden__img-box">
+                <img src="img/svg/home.svg" alt="Главная страница" class="box-hidden__img">
+              </div>
+              <p class="box-hidden__text">главная</p>
+            </a>
+          </li>
+          <li class="box-hidden__item">
+            <a href="delivery.html" class="box-hidden__link">
+              <div class="box-hidden__img-box">
+                <img src="img/svg/delivery.svg" alt="Главная страница" class="box-hidden__img">
+              </div>
+              <p class="box-hidden__text">доставка</p>
+            </a>
+          </li>
+          <li class="box-hidden__item" data-graph-path="adress">
+            <a class="box-hidden__link">
+              <div class="box-hidden__img-box">
+                <img src="img/svg/location.svg" alt="Главная страница" class="box-hidden__img">
+              </div>
+              <p class="box-hidden__text">заведения</p>
+            </a>
+          </li>
+          <li class="box-hidden__item">
+            <a href="#" class="box-hidden__link">
+              <div class="box-hidden__img-box">
+                <img src="img/svg/phone_red.svg" alt="Главная страница" class="box-hidden__img">
+              </div>
+              <p class="box-hidden__text">контакты</p>
+            </a>
+          </li>
+          <li class="box-hidden__item">
+            <a href="cart.html" class="box-hidden__link">
+              <div class="box-hidden__img-box">
+                <img src="img/svg/cart_red.svg" alt="Главная страница" class="box-hidden__img">
+              </div>
+              <p class="box-hidden__text">корзина</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="maps">
+  <div class="container">
+    <div class="maps__title-box">
+      <h3 class="maps__title">Мы всегда рядом</h3>
+      <p class="maps__text-decor">всегда на связи</p>
+    </div>
+    <iframe class="map maps__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.8173215868486!2d30.36187694818528!3d59.930765727423804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631bb49b3037d%3A0xfb4f67e98ff4ab8d!2z0J7QsdC10LvQuNGB0Log0LPQvtGA0L7QtNGDLdCT0LXRgNC-0Y4g0JvQtdC90LjQvdCz0YDQsNC00YM!5e0!3m2!1sru!2sru!4v1674207252930!5m2!1sru!2sru"
+      width="100%" height="529" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p class="maps__descr">Единый номер:</p>
+    <p class="maps__tel">
+      <a href="tel:8812670555" class="maps__link-tel">
+        8 (812) 670-15-55
+      </a>
+    </p>
+  </div>
+</section>
+
+    </main>
+      <footer class="footer footer-delivery">
+  <div class="container footer-delivery__container">
+    <div class="footer-delivery__adress">
+      <ul class="list-reset footer__list footer-delivery__list">
+        <li class="footer-delivery__item footer-delivery__item-orange">Ул. ворошилова 3</li>
+        <li class="footer-delivery__item footer-delivery__item-orange">пр. коммуны 63</li>
+        <li class="footer-delivery__item footer-delivery__item-orange">Кудрово, ул. Пражская 16</li>
+      </ul>
+      <ul class="list-reset footer__list">
+        <li class="footer-delivery__item footer-delivery__item-blue">Выборгское шоссе 15</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Учебный переулок 3а</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Типанова 27/39</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Суздальский 7</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Светлановский 48 к4</li>
+      </ul>
+      <ul class="list-reset footer__list footer__list-green">
+        <li class="footer-delivery__item footer-delivery__item-green">Выборгское шоссе 15</li>
+        <li class="footer-delivery__item footer-delivery__item-red">Учебный переулок 3а</li>
+        <li class="footer-delivery__item footer-delivery__item-red">Типанова 27/39</li>
+      </ul>
+    </div>
+    <div class="footer-delivery__hidden">
+      <ul class="list-reset footer__list footer-delivery__list">
+        <li class="footer-delivery__item footer-delivery__item-orange">Ул. ворошилова 3</li>
+        <li class="footer-delivery__item footer-delivery__item-orange">пр. коммуны 63</li>
+        <li class="footer-delivery__item footer-delivery__item-orange">Кудрово, ул. Пражская 16</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Выборгское шоссе 15</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Учебный переулок 3а</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Типанова 27/39</li>
+      </ul>
+      <ul class="list-reset footer__list">
+        <li class="footer-delivery__item footer-delivery__item-blue">Суздальский 7</li>
+        <li class="footer-delivery__item footer-delivery__item-blue">Светлановский 48 к4</li>
+        <li class="footer-delivery__item footer-delivery__item-green">Выборгское шоссе 15</li>
+        <li class="footer-delivery__item footer-delivery__item-red">Учебный переулок 3а</li>
+        <li class="footer-delivery__item footer-delivery__item-red">Типанова 27/39</li>
+      </ul>
+    </div>
+    <p class="footer-delivery__tel">
+      <a href="tel:8812670555" class="footer-delivery__link-tel">
+        8 (812) 670-15-55
+      </a>
+    </p>
+    <div class="footer-delivery__store">
+      <div class="footer-delivery__app">
+        <a href="#">
+          <img src="img/svg/app_store.svg" alt="App Store" class="footer-delivery__img">
+        </a>
+      </div>
+      <div class="footer-delivery__app">
+        <a href="#">
+          <img src="img/svg/Play_store.svg" alt="Play Store" class="footer-delivery__img">
+        </a>
+      </div>
+    </div>
+    <ul class="list-reset footer-delivery__sotial">
+      <li class="footer-delivery__sotial-item">
+        <a href="#" class="footer-delivery__sotial-link">
+          <img src="img/svg/insta.svg" alt="Инстаграмм"></a>
+      </li>
+      <li class="footer-delivery__sotial-item">
+        <a href="#" class="footer-delivery__sotial-link">
+          <img src="img/svg/vk.svg" alt="Вконтакте"></a>
+      </li>
+      <li class="footer-delivery__sotial-item">
+        <a href="#" class="footer-delivery__sotial-link">
+          <img src="img/svg/Email.svg" alt="Емайл"></a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      <p class="footer__descr">Юридические документы</p>
+      <p class="footer__descr footer__year">2023</p>
+      <p class="footer__descr footer__descr-hidden">Единый номер:
+        <span><a href="tel:88126701555" class="footer__tel">8 (812) 670-15-55</a></span>
+      </p>
+      <img src="img/svg/sign.svg" alt="Подпись" class="footer__sign">
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

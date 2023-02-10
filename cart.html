@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Мясо и Хлеб</title>
+  <link rel="preload" href="fonts/RockwellNova.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RockwellNova-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <div class="title-hidden">сеть мясных Магазинов</div>
+    <nav class="nav" title="">
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="delivery.html" class="nav__link">Доставка</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__logo">
+      <img src="img/logo.png" alt="" class="header__logo-img">
+    </div>
+    <div class="header__right">
+      <div class="header__tel">
+        <a href="tel:88126701555" class="header__tel-link">8 (812) 670-15-55</a>
+
+        <a href="cart.html"><button class="btn-reset header__card">
+            <img class="header__cart-img" src="img/svg/Cart.svg" alt="Корзина">
+          </button></a>
+        <div class="header__count">1</div>
+      </div>
+      <ul class="list-reset header__sotial">
+        <li class="header__item">
+          <a class="header__sotial-link" href="#">
+            <img src="img/svg/insta.svg" alt="Инстаграмм">
+          </a>
+        </li>
+        <li class="header__item">
+        <li class="header__item">
+          <a class="header__sotial-link" href="https://vk.com/login" target="_blank">
+            <img src="img/svg/vk.svg" alt="Вконтакте">
+          </a>
+        </li>
+        </li>
+        <li class="header__item">
+        <li class="header__item">
+          <a class="header__sotial-link" href="#">
+            <img src="img/svg/Email.svg" alt="Емейл">
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+    <main class="main">
+      <div class="modal-adress graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="adress">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content modal-adress__content">
+      <div class="modal-adress__list-box">
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-orange">Ул. ворошилова 3</li>
+          <li class="modal-adress__item modal-adress__item-orange">пр. коммуны 63</li>
+          <li class="modal-adress__item modal-adress__item-orange">Кудрово, ул. Пражская 16</li>
+        </ul>
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-blue">Выборгское шоссе 15</li>
+          <li class="modal-adress__item modal-adress__item-blue">чебный переулок 3а</li>
+          <li class="modal-adress__item modal-adress__item-blue">Типанова 27/39</li>
+          <li class="modal-adress__item modal-adress__item-blue">Суздальский 7</li>
+          <li class="modal-adress__item modal-adress__item-blue">Светлановский 48 к4</li>
+        </ul>
+        <ul class="modal-adress__list list-reset">
+          <li class="modal-adress__item modal-adress__item-green">Выборгское шоссе 15</li>
+          <li class="modal-adress__item modal-adress__item-red">Учебный переулок 3а</li>
+          <li class="modal-adress__item modal-adress__item-red">Типанова 27/39</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <section class="cart">
+  <div class="container cart__container">
+    <div class="cart__title-box">
+      <h3 class="cart__title">Корзина</h3>
+      <p class="cart__title-decor">Ваш заказ доставки</p>
+    </div>
+    <a href="menu-list.html" class="cart__link-back">Вернуться к покупкам</a>
+    <div class="cart__form">
+      <div class="cart__form-input">
+        <form action="form">
+          <input type="name" class="cart__input-adress" placeholder="Имя">
+          <input type="text" class="cart__input-adress" placeholder="Адрес доставки">
+          <div class="cart__form-box">
+            <input type="text" class="cart__input cart__input-home" placeholder="Дом">
+            <input type="text" class="cart__input" placeholder="Корпус">
+            <input type="text" class="cart__input" placeholder="кв/офис">
+            <input type="tel" class="cart__input cart__input-tel" placeholder="Телефон">
+          </div>
+        </form>
+      </div>
+      <div class="cart__total">
+        <p class="cart__total-title">сумма заказа</p>
+        <div class="cart__total-inner">
+          <ul class="cart__list list-reset">
+            <li class="cart__item">Общая стоимость:</li>
+            <li class="cart__item">Стоимость доставки:</li>
+            <li class="cart__item">Скидка:</li>
+            <li class="cart__item">Итого:</li>
+          </ul>
+          <ul class="cart__list list-reset">
+            <li class="cart__item">781</li>
+            <li class="cart__item">329</li>
+            <li class="cart__item">432</li>
+            <li class="cart__item">1248</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="list-reset cart__order-list">
+      <li class="cart__order-item">
+        <div class="cart__img-box">
+          <img src="img/salad.png" alt="Салат" class="cart__img">
+        </div>
+        <span class="cart__descr">Салат с курой и огурцами</span>
+        <div class="count cart__count">
+          <span class="change minus min">
+            <span>-</span>
+          </span>
+          <input type="text" name="productСount" value="1" disabled="">
+          <span class="change plus">
+            <span class="plus-text">+</span>
+          </span>
+        </div>
+        <span class="cart__prise-old">119</span>
+        <span class="cart__prise">119 </span>
+        <button class="cart__close btn-reset"></button>
+      </li>
+      <li class="cart__order-item">
+        <div class="cart__img-box">
+          <img src="img/salad.png" alt="Салат" class="cart__img">
+        </div>
+        <span class="cart__descr">Салат с курой и огурцами</span>
+        <div class="count cart__count">
+          <span class="change minus min">
+            <span>-</span>
+          </span>
+          <input type="text" name="productСount" value="1" disabled="">
+          <span class="change plus">
+            <span class="plus-text">+</span>
+          </span>
+        </div>
+        <span class="cart__prise-old">119</span>
+        <span class="cart__prise">119</span>
+        <button class="cart__close btn-reset"></button>
+      </li>
+      <li class="cart__order-item">
+        <div class="cart__img-box">
+          <img src="img/salad.png" alt="Салат" class="cart__img">
+        </div>
+        <span class="cart__descr">Салат с курой и огурцами</span>
+        <div class="count cart__count">
+          <span class="change minus min">
+            <span>-</span>
+          </span>
+          <input type="text" name="productСount" value="1" disabled="">
+          <span class="change plus">
+            <span class="plus-text">+</span>
+          </span>
+        </div>
+        <span class="cart__prise-old">119</span>
+        <span class="cart__prise">119</span>
+        <button class="cart__close btn-reset"></button>
+      </li>
+      <li class="cart__order-item">
+        <div class="cart__img-box">
+          <img src="img/salad.png" alt="Салат" class="cart__img">
+        </div>
+        <span class="cart__descr">Салат с курой и огурцами</span>
+        <div class="count cart__count">
+          <span class="change minus min">
+            <span>-</span>
+          </span>
+          <input type="text" name="productСount" value="1" disabled="">
+          <span class="change plus">
+            <span class="plus-text">+</span>
+          </span>
+        </div>
+        <span class="cart__prise-old">119</span>
+        <span class="cart__prise">119</span>
+        <button class="cart__close btn-reset"></button>
+      </li>
+    </ul>
+    <button class="btn-reset cart__btn">
+      <a class="cart__link" href="#">Оформить</a>
+    </button>
+    <button class="btn-reset cart__btn cart__btn-hidden">
+      <a class="cart__link" href="form.html">Оформить</a>
+    </button>
+    <div class="box-hidden cart__hidden">
+      <ul class="list-reset box-hidden__list">
+        <li class="box-hidden__item">
+          <a href="index.html" class="box-hidden__link">
+            <div class="box-hidden__img-box">
+              <img src="img/svg/home.svg" alt="Главная страница" class="box-hidden__img">
+            </div>
+            <p class="box-hidden__text">главная</p>
+          </a>
+        </li>
+        <li class="box-hidden__item">
+          <a href="delivery.html" class="box-hidden__link">
+            <div class="box-hidden__img-box">
+              <img src="img/svg/delivery.svg" alt="Главная страница" class="box-hidden__img">
+            </div>
+            <p class="box-hidden__text">доставка</p>
+          </a>
+        </li>
+        <li class="box-hidden__item" data-graph-path="adress">
+          <a class="box-hidden__link">
+            <div class="box-hidden__img-box">
+              <img src="img/svg/location.svg" alt="Главная страница" class="box-hidden__img">
+            </div>
+            <p class="box-hidden__text">заведения</p>
+          </a>
+        </li>
+        <li class="box-hidden__item">
+          <a href="#" class="box-hidden__link">
+            <div class="box-hidden__img-box">
+              <img src="img/svg/phone_red.svg" alt="Главная страница" class="box-hidden__img">
+            </div>
+            <p class="box-hidden__text">контакты</p>
+          </a>
+        </li>
+        <li class="box-hidden__item">
+          <a href="cart.html" class="box-hidden__link">
+            <div class="box-hidden__img-box">
+              <img src="img/svg/cart_red.svg" alt="Главная страница" class="box-hidden__img">
+            </div>
+            <p class="box-hidden__text">корзина</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+      <footer class="footer footer-cart">
+  <div class="container footer-cart__container">
+    <div class="footer-cart__store">
+      <div class="footer__store">
+        <div class="footer__app">
+          <a href="#">
+            <img src="img/svg/app_store.svg" alt="App Store" class="footer__img">
+          </a>
+        </div>
+        <div class="footer__app footer__store-box">
+          <a href="#">
+            <img src="img/svg/Play_store.svg" alt="Play Store" class="footer__img-store">
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="list-reset footer__sotial">
+      <li class="footer__sotial-item">
+        <a href="#" class="footer__sotial-link">
+          <img src="img/svg/insta.svg" alt="Инстаграмм"></a>
+      </li>
+      <li class="footer__sotial-item">
+        <a href="#" class="footer__sotial-link">
+          <img src="img/svg/vk.svg" alt="Вконтакте"></a>
+      </li>
+      <li class="footer__sotial-item">
+        <a href="#" class="footer__sotial-link">
+          <img src="img/svg/Email.svg" alt="Емайл"></a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      <p class="footer__descr">Юридические документы</p>
+      <p class="footer__descr footer__year">2023</p>
+      <p class="footer__descr footer__descr-hidden">Единый номер:
+        <span><a href="tel:88126701555" class="footer__tel">8 (812) 670-15-55</a></span>
+      </p>
+      <img src="img/svg/sign.svg" alt="Подпись" class="footer__sign">
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

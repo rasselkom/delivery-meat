@@ -1925,8 +1925,8 @@ a {
 }
 .stock .box-hidden__item {
   margin: 0 auto;
-  width: 70px;
-  height: 70px;
+  max-width: 80px;
+  max-height: 80px;
   background: #851B13;
   border: 1px solid #CA4F45;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -1941,8 +1941,8 @@ a {
 }
 .stock .box-hidden__img-box {
   margin-left: 10px;
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
 }
 .stock .box-hidden__text {
   margin: 0;

@@ -1,0 +1,71 @@
+.footer-cart {
+  padding: 450px 0px 50px 0px;
+  background-image: url("../img/svg/head_goat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-cart__adress {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 28px;
+}
+.footer-cart__sotial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.footer-cart__sotial-item:not(:last-child) {
+  margin-right: 60px;
+}
+.footer-cart__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer-cart__descr {
+  margin: 0;
+  font-family: "Rockwell Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer-cart__descr span {
+  display: block;
+}
+.footer-cart__tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+.footer-cart__year {
+  padding-top: 30px;
+  padding-right: 90px;
+}
+.footer-cart__store {
+  margin: 54px 0px 84px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=footer-cart.css.map */
